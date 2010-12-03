@@ -1,8 +1,10 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0'
-gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'rails', '3.0.3'
 gem 'rpx_now'
+gem 'mongo_mapper'
+gem 'bson_ext'
+
 
 group :development, :test do
    gem 'capybara'   # For integration testing, replaces webrat
