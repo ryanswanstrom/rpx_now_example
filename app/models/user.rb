@@ -1,5 +1,12 @@
-class User < ActiveRecord::Base
+class User
+    include MongoMapper::Document
+
+  key :name, String
+  key :email, String
+  key :identifier, String
+  timestamps!
+
   def to_s
-    name
+     self.name
   end
 end
